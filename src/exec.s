@@ -5,9 +5,8 @@ XEXEC = $63
 .proc _xexec_extern
     stx save_x
     ldy save_x
-
+	ldx #$00 ; Fork
     .byte $00,XEXEC ; BRK_KERNEL XEXEC
-
 
     rts
 .endproc
