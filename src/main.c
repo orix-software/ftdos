@@ -13,16 +13,16 @@ int main(int argc, char *argv[]) {
 	unsigned char cmd[]={ 'b', 'a', 's', 'i', 'c',  '1', '1',' ','\"', 'L','O','A','D','-','F','T','D','\"',':', 0xc0,'\"','F','T','D','O','S','3','7','6','.','S','Y','S','\"',',','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0','\0' };
 
     if (argc==2) {
-		if (strcmp(argv[1],"-v")) {
+		if (strcmp(argv[1],"-v")==0) {
 			version();
 			return 0;
 		}
-			
+
         strcat(cmd,",\"");
         strcat(cmd,strupper(argv[1]));
         strcat(cmd,"\"");
     }
 
-    xexec_extern(cmd); // 
+    xexec_extern(cmd); //
 	return 0;
 }
