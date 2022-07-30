@@ -26,7 +26,6 @@ SOURCE=src/main.c
 
 VERSION=$(shell cat VERSION)
 
-  
 code: $(SOURCE)
 	mkdir build/bin -p
 	mkdir build/usr/share/ftdos/ -p
@@ -34,7 +33,7 @@ code: $(SOURCE)
 	./docs/builddocs.sh
 	mkdir build/HOME/BASIC11/DSK -p
 	cp runtime/LOAD-FTD.TAP build/HOME/BASIC11/
-	cp runtime/FTDOS.DSK build/HOME/BASIC11/dsk
+	cp runtime/FTDOS.DSK build/HOME/BASIC11/DSK/
 	cp runtime/FTDOS376.SYS build/
 
 
