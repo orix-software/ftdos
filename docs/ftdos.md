@@ -22,4 +22,4 @@ ftdos disks must be present in /home/basic11/dsk/
 * refers to ftdos manual for usages
 * you need to switch off/on the oric when you reset into ftdos mode, because there is a bug when we reset during ftdos mode. Ftdos does not load and reboot into Orix
 
-![Screenshot ftdos](img/ftdos.jpg)
+![Screenshot ftdos](ftdos.jpg)
